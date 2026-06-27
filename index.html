@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>QRP Coastal Living | The Flamingo House</title>
-  <meta name="description" content="The Flamingo House by QRP Coastal Living is a comfortable Charleston-area Airbnb for families, friends, couples, work trips, and weekend getaways." />
+  <meta name="description" content="The Flamingo House by QRP Coastal Living is a warm Charleston-area Airbnb with four bedrooms, comfortable living spaces, outdoor hangout space, and a guest guidebook." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700;800&family=Sacramento&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -16,126 +16,151 @@
       <img src="assets/qrp-logo.svg" alt="QRP Coastal Living logo" />
     </a>
     <nav class="nav" aria-label="Main navigation">
+      <a class="active" href="#top">Home</a>
       <a href="#house">The House</a>
-      <a href="#photos">Photos</a>
-      <a href="#guidebook">Guidebook</a>
-      <a href="#book" class="nav-cta">Book</a>
+      <a href="#amenities">Amenities</a>
+      <a href="#area-guide">Area Guide</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#book" class="nav-button">Book Your Stay</a>
     </nav>
   </header>
 
   <main id="top">
-    <section class="hero section-shell">
-      <div class="hero-copy">
-        <p class="eyebrow">Charleston Area Stay</p>
-        <h1>The Flamingo House</h1>
-        <p class="hero-text">A comfortable, thoughtfully prepared home for family visits, friend trips, work travel, golf weekends, and easy Charleston-area exploring.</p>
+    <section class="hero">
+      <div class="hero-panel">
+        <p class="script-kicker">The</p>
+        <h1>Flamingo<br />House <span aria-hidden="true">⌁</span></h1>
+        <div class="small-rule"></div>
+        <p class="hero-text">Your home base for memory-making, laughter-filled nights, and easy Lowcountry living.</p>
         <div class="hero-actions">
-          <a class="button primary" href="#book">Book the Stay</a>
-          <a class="button secondary" href="guidebook.html" download>Download Guest Guide</a>
+          <a class="button primary" href="#book">Book Your Stay</a>
+          <a class="button outline" href="#gallery">View Photos</a>
         </div>
       </div>
-      <div class="hero-card" aria-label="The Flamingo House quick details">
-        <img src="assets/qrp-logo.svg" alt="QRP Coastal Living logo" />
-        <div class="quick-facts">
-          <span>4 Bedrooms</span>
-          <span>Backyard Fire Pit</span>
-          <span>Fully Stocked Kitchen</span>
-          <span>Local Guidebook</span>
+      <div class="hero-image" role="img" aria-label="Exterior photo placeholder for The Flamingo House">
+        <div class="image-note">Add exterior house photo here</div>
+      </div>
+    </section>
+
+    <section id="amenities" class="intro section-shell">
+      <div class="heart-rule"><span></span><strong>♡</strong><span></span></div>
+      <h2>Gather. Relax. Enjoy.</h2>
+      <p>Whether you’re here for a family getaway, friends weekend, business trip, or a little bit of everything — we’ve got you.</p>
+
+      <div class="amenity-grid">
+        <article>
+          <div class="icon-line">▭</div>
+          <h3>4 Bedrooms</h3>
+          <p>Plenty of space for everyone to sleep and relax.</p>
+        </article>
+        <article>
+          <div class="icon-line">▱</div>
+          <h3>Comfortable Living</h3>
+          <p>Open living spaces made for connection.</p>
+        </article>
+        <article>
+          <div class="icon-line">♨</div>
+          <h3>Outdoor Hangout</h3>
+          <p>Fire pit, seating, and room to unwind.</p>
+        </article>
+        <article>
+          <div class="icon-line">♧</div>
+          <h3>Fully Stocked</h3>
+          <p>Cook, dine, and make yourself at home.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="guidebook" class="guidebook-banner section-shell">
+      <div class="guide-copy">
+        <div class="guide-icon">▯</div>
+        <p class="script-label">Your Stay, Made Easy</p>
+        <div class="small-rule light"></div>
+        <p>Our complimentary guidebook has what guests need before and during their stay — house tips, local favorites, check-out expectations, and more.</p>
+        <a class="button cream" href="guidebook.html">Download the Guidebook</a>
+      </div>
+      <div class="guide-visual" aria-label="Guest guidebook visual">
+        <div class="book-cover">
+          <span>The</span>
+          <strong>Flamingo<br />House</strong>
+          <em>Guest Guidebook</em>
         </div>
       </div>
     </section>
 
-    <section id="house" class="section-shell simple-section">
-      <div class="section-heading">
-        <p class="eyebrow">The House</p>
-        <h2>Easy, clean, and made for real life.</h2>
+    <section id="house" class="section-shell story-card">
+      <div class="leaf-mark" aria-hidden="true">⌇</div>
+      <div>
+        <h2>A place to stay. A place to <em>make memories.</em></h2>
+        <p>We can’t wait to host you. The Flamingo House is designed to feel warm, easy, and thoughtful — not like a random rental with no personality.</p>
       </div>
-      <div class="two-column-copy">
-        <p>The Flamingo House is designed to work for more than one kind of guest. It should feel relaxed enough for a family trip, polished enough for a work stay, and fun enough for a weekend getaway.</p>
-        <p>The look is coastal without being overly themed: warm neutrals, navy, soft blue-green, natural textures, and small flamingo moments where they make sense.</p>
+      <div class="mini-heart" aria-hidden="true">♥</div>
+    </section>
+
+    <section id="area-guide" class="area-guide section-shell">
+      <div class="section-heading centered">
+        <p class="eyebrow">Area Guide</p>
+        <h2>Lowcountry favorites, without the guesswork.</h2>
+        <p>Use the guidebook to point guests toward the best local food, coffee, beaches, shopping, golf, and easy Charleston-area plans.</p>
+      </div>
+      <div class="area-grid">
+        <article>
+          <h3>Coffee + Breakfast</h3>
+          <p>Easy morning stops, cozy coffee, and brunch-worthy ideas.</p>
+        </article>
+        <article>
+          <h3>Dinner + Drinks</h3>
+          <p>Casual nights, date nights, and Charleston favorites.</p>
+        </article>
+        <article>
+          <h3>Beaches + Outdoors</h3>
+          <p>Beach days, walks, parks, and fresh-air plans.</p>
+        </article>
+        <article>
+          <h3>Golf + Getaways</h3>
+          <p>Weekend-friendly ideas for couples, friends, and work trips.</p>
+        </article>
       </div>
     </section>
 
-    <section id="photos" class="gallery section-shell" aria-label="Photo gallery placeholders">
-      <div class="photo-card large">
-        <span>Living Room</span>
-        <p>Add your best wide photo here.</p>
-      </div>
-      <div class="photo-card">
-        <span>Kitchen</span>
-        <p>Fully stocked and guest-ready.</p>
-      </div>
-      <div class="photo-card">
-        <span>Bedroom</span>
-        <p>Comfortable, simple, polished.</p>
-      </div>
-      <div class="photo-card">
-        <span>Backyard</span>
-        <p>Fire pit nights and easy hangouts.</p>
-      </div>
-    </section>
-
-    <section id="guidebook" class="guidebook section-shell">
-      <div class="guidebook-card">
-        <p class="eyebrow">Guest Guidebook</p>
-        <h2>Everything guests need in one simple place.</h2>
-        <p>The guidebook keeps the website clean while giving guests the practical details: arrival basics, house reminders, check-out expectations, and local favorites.</p>
-        <a class="button primary" href="guidebook.html" download>Download the Guidebook</a>
-      </div>
-      <div class="guidebook-list">
-        <h3>Inside the guide</h3>
-        <ul>
-          <li>Welcome note and stay overview</li>
-          <li>General check-in and check-out expectations</li>
-          <li>House reminders and amenities</li>
-          <li>Food, coffee, beaches, shopping, golf, and Charleston ideas</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="section-shell simple-section">
-      <div class="section-heading">
-        <p class="eyebrow">Good For</p>
-        <h2>A house that works for different trips.</h2>
-      </div>
-      <div class="audience-grid">
-        <article>
-          <h3>Families</h3>
-          <p>Room to spread out, cook, rest, and keep the trip easy.</p>
-        </article>
-        <article>
-          <h3>Friends</h3>
-          <p>A comfortable home base for dinners, exploring, and nights in.</p>
-        </article>
-        <article>
-          <h3>Work Trips</h3>
-          <p>Simple, practical, and more comfortable than another hotel room.</p>
-        </article>
-        <article>
-          <h3>Weekend Getaways</h3>
-          <p>Close enough to enjoy the area, cozy enough to stay in.</p>
-        </article>
-      </div>
+    <section id="gallery" class="gallery section-shell" aria-label="Photo gallery placeholders">
+      <div class="gallery-card large"><span>Exterior</span><p>Add the front house photo.</p></div>
+      <div class="gallery-card"><span>Living Room</span><p>Add your best wide interior photo.</p></div>
+      <div class="gallery-card"><span>Kitchen</span><p>Show the fully stocked setup.</p></div>
+      <div class="gallery-card"><span>Backyard</span><p>Fire pit and outdoor seating.</p></div>
     </section>
 
     <section id="book" class="booking section-shell">
       <div>
-        <p class="eyebrow">Ready to stay?</p>
-        <h2>Book The Flamingo House.</h2>
-        <p>Add the Airbnb listing URL to the button below when the listing is live.</p>
+        <p class="eyebrow light-text">Book Your Stay</p>
+        <h2>Ready to plan your getaway?</h2>
+        <p>Add the live Airbnb URL when the listing is ready. Until then, this button stays honest instead of pretending there is a booking link.</p>
       </div>
-      <div class="booking-actions">
-        <a class="button primary" href="#" aria-label="Airbnb booking link placeholder">Airbnb Link Coming Soon</a>
-        <a class="button secondary" href="guidebook.html" download>Download Guest Guide</a>
-      </div>
+      <a class="button cream" href="#">Check Availability</a>
     </section>
   </main>
 
   <footer class="footer">
-    <img src="assets/qrp-logo.svg" alt="QRP Coastal Living logo" />
+    <div class="footer-brand">
+      <img src="assets/qrp-logo.svg" alt="QRP Coastal Living logo" />
+      <p>Coastal living. Elevated stays.</p>
+    </div>
     <div>
-      <p><strong>QRP Coastal Living</strong> · Curated Stays. Coastal Charm.</p>
-      <p>The Flamingo House · Charleston Area</p>
+      <h3>Quick Links</h3>
+      <a href="#house">The House</a>
+      <a href="#amenities">Amenities</a>
+      <a href="#area-guide">Area Guide</a>
+      <a href="#gallery">Gallery</a>
+    </div>
+    <div>
+      <h3>Connect</h3>
+      <p>hello@theflamingohouse.com</p>
+      <p>Ladson, South Carolina</p>
+    </div>
+    <div>
+      <h3>Book Your Stay</h3>
+      <p>Ready to plan your getaway?</p>
+      <a class="footer-button" href="#book">Check Availability</a>
     </div>
   </footer>
 </body>
