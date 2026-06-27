@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flamingo Landing Guest Guidebook</title>
+  <meta name="description" content="Public guest guidebook for Flamingo Landing by QRP Coastal Living." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .guide-page { padding: 64px 0; }
+    .guide-cover { padding: clamp(32px, 6vw, 70px); border-radius: 30px; background: rgba(255,255,255,0.72); border: 1px solid var(--line); box-shadow: var(--shadow); }
+    .guide-cover h1 { font-size: clamp(3rem, 8vw, 6rem); }
+    .guide-section { padding: 34px 0; border-bottom: 1px solid var(--line); }
+    .guide-section h2 { margin-bottom: 18px; font-size: clamp(2rem, 4vw, 3rem); }
+    .guide-section p, .guide-section li { color: var(--muted); line-height: 1.8; }
+    .guide-section ul { padding-left: 22px; }
+    .print-note { margin-top: 24px; color: var(--muted); }
+    @media print { .site-header, .button { display: none; } body { background: white; } .guide-cover { box-shadow: none; } }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Back to QRP Coastal Living homepage">
+      <span class="brand-mark">QRP</span>
+      <span class="brand-text">Coastal Living</span>
+    </a>
+    <nav class="nav" aria-label="Guide navigation">
+      <a href="index.html">Home</a>
+      <a href="#arrival">Arrival</a>
+      <a href="#checkout">Check-Out</a>
+      <a href="#local">Local Picks</a>
+    </nav>
+  </header>
+
+  <main class="guide-page section-shell">
+    <section class="guide-cover">
+      <p class="eyebrow">Flamingo Landing</p>
+      <h1>Guest Guidebook</h1>
+      <p class="hero-text">A public-safe guide for the stay, the house, and the local area. Private arrival details should be shared only through the proper guest-only channel.</p>
+      <p class="print-note">Tip: Use your browser’s print option to save this guide as a PDF.</p>
+    </section>
+
+    <section class="guide-section">
+      <h2>Welcome</h2>
+      <p>Welcome to Flamingo Landing by QRP Coastal Living. This home is designed to be comfortable, easy, and thoughtfully prepared so guests can settle in quickly and enjoy the Charleston area.</p>
+    </section>
+
+    <section id="arrival" class="guide-section">
+      <h2>Arrival Basics</h2>
+      <ul>
+        <li>Review your confirmed reservation messages before arrival.</li>
+        <li>Use the guest-only instructions provided through the booking platform for private access details.</li>
+        <li>Let the host know promptly if anything seems off when you arrive.</li>
+      </ul>
+    </section>
+
+    <section class="guide-section">
+      <h2>House Basics</h2>
+      <ul>
+        <li>Make yourself comfortable and treat the home with care.</li>
+        <li>Use provided amenities respectfully so the next guest gets the same polished experience.</li>
+        <li>Keep outdoor areas tidy after use.</li>
+        <li>Report maintenance concerns quickly instead of waiting until check-out.</li>
+      </ul>
+    </section>
+
+    <section id="checkout" class="guide-section">
+      <h2>Check-Out Expectations</h2>
+      <ul>
+        <li>Gather personal items and check drawers, closets, and chargers.</li>
+        <li>Dispose of trash in the proper area.</li>
+        <li>Load or start dishes as directed in the guest-only instructions.</li>
+        <li>Turn off lights and secure the home before leaving.</li>
+        <li>Send the host a message if anything needs attention.</li>
+      </ul>
+    </section>
+
+    <section id="local" class="guide-section">
+      <h2>Local Guide Preview</h2>
+      <p>Use this guide as a starting point for planning your stay. Add specific names, links, and favorites as the property launches and the local list gets refined.</p>
+      <ul>
+        <li><strong>Coffee + Breakfast:</strong> Add favorite nearby coffee shops, bakeries, and brunch spots.</li>
+        <li><strong>Dinner + Drinks:</strong> Add casual restaurants, date-night picks, and Charleston favorites.</li>
+        <li><strong>Beaches:</strong> Add preferred beach options and realistic drive-time notes.</li>
+        <li><strong>Golf:</strong> Add nearby courses and weekend-friendly options.</li>
+        <li><strong>Shopping + Strolling:</strong> Add neighborhoods, markets, and cute local stops.</li>
+        <li><strong>Rainy Day Ideas:</strong> Add museums, indoor activities, shopping, and cozy food options.</li>
+      </ul>
+    </section>
+
+    <section class="guide-section">
+      <h2>Host Note</h2>
+      <p>Thank you for choosing Flamingo Landing. The goal is for every guest to feel welcomed, prepared, and excited to enjoy the Lowcountry.</p>
+      <a class="button primary" href="index.html">Back to Website</a>
+    </section>
+  </main>
+</body>
+</html>
