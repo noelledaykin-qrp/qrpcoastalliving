@@ -184,18 +184,52 @@ h3 { color: var(--ink); font-size: 1.05rem; }
   object-position: center;
 }
 
-.intro { padding: 44px 0 54px; text-align: center; }
 .eyebrow { margin: 0 0 10px; color: var(--peach-dark); text-transform: uppercase; letter-spacing: 0.16em; font-size: 0.76rem; font-weight: 800; }
-.intro h2 { font-size: clamp(2rem, 3.4vw, 3rem); }
-.intro > p,
 .section-heading p,
-.area-grid p,
 .house-section p,
-.guidebook-section p,
+.intro > p,
+.resource-card p,
 .booking p,
 .footer p { color: var(--muted); line-height: 1.65; }
-.intro > p { max-width: 580px; margin: 14px auto 38px; }
+.centered { text-align: center; margin-inline: auto; max-width: 760px; }
 
+.house-section { padding: 24px 0 58px; }
+.house-photo-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr 0.8fr;
+  grid-auto-rows: 220px;
+  gap: 18px;
+  margin-top: 34px;
+}
+.house-photo-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 220px;
+  overflow: hidden;
+  padding: 24px;
+  border-radius: var(--radius);
+  background:
+    linear-gradient(180deg, transparent, rgba(76, 49, 39, 0.64)),
+    linear-gradient(135deg, rgba(216, 115, 92, 0.22), rgba(122, 168, 166, 0.25)),
+    #ead6c5;
+  border: 1px dashed rgba(216, 115, 92, 0.36);
+  color: var(--white);
+}
+.house-photo-card.large {
+  grid-row: span 2;
+  background:
+    linear-gradient(180deg, transparent, rgba(76, 49, 39, 0.56)),
+    url("assets/hero-house.webp") center / cover,
+    #ead6c5;
+}
+.house-photo-card span { font-weight: 900; letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.78rem; }
+.house-photo-card p { margin: 8px 0 0; color: rgba(255,255,255,0.84); }
+
+.intro { padding: 56px 0 58px; text-align: center; border-top: 1px solid rgba(216, 115, 92, 0.12); }
+.intro h2 { font-size: clamp(2rem, 3.4vw, 3rem); }
+.intro > p { max-width: 580px; margin: 14px auto 38px; }
 .amenity-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -221,95 +255,53 @@ h3 { color: var(--ink); font-size: 1.05rem; }
 .amenity-grid h3 { margin-bottom: 9px; font-family: "Cormorant Garamond", Georgia, serif; font-size: 1.35rem; }
 .amenity-grid p { margin: 0; color: var(--muted); line-height: 1.55; }
 
-.guidebook-section {
+.resource-links {
   display: grid;
-  grid-template-columns: 1fr 0.85fr;
-  gap: clamp(24px, 5vw, 62px);
-  align-items: center;
-  margin-block: 44px 30px;
-  padding: clamp(34px, 5vw, 62px);
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+  padding: 48px 0 64px;
+}
+.resource-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 330px;
+  padding: clamp(30px, 4vw, 46px);
   border-radius: 24px;
   background: linear-gradient(135deg, var(--peach), #dc8068);
   box-shadow: var(--shadow);
   color: var(--white);
+  transition: transform 180ms ease, box-shadow 180ms ease;
 }
-.section-copy p:not(.eyebrow) { max-width: 530px; color: rgba(255,255,255,0.88); margin: 18px 0 30px; }
-.guidebook-section h2,
-.guidebook-section .eyebrow { color: var(--white); }
-.guidebook-card {
-  display: grid;
-  place-items: center;
-  min-height: 280px;
+.resource-card:nth-child(2) {
+  background: linear-gradient(135deg, #cf806b, var(--peach-dark));
 }
-.book-cover {
-  display: grid;
-  place-items: center;
-  width: min(250px, 80%);
-  aspect-ratio: 0.72;
-  padding: 28px;
-  text-align: center;
+.resource-card:hover,
+.resource-card:focus {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 58px rgba(97, 57, 41, 0.18);
+}
+.resource-card .eyebrow,
+.resource-card h2 { color: var(--white); }
+.resource-card p { max-width: 500px; color: rgba(255,255,255,0.88); margin: 18px 0 30px; }
+.resource-card span {
+  margin-top: auto;
+  display: inline-flex;
+  width: fit-content;
+  min-height: 48px;
+  align-items: center;
+  padding: 0 20px;
+  border-radius: 999px;
   color: var(--peach-dark);
-  background: #f8eee3;
-  border-radius: 5px 16px 16px 5px;
-  box-shadow: 24px 28px 50px rgba(80, 42, 31, 0.28);
-  transform: rotate(5deg);
-  border: 1px solid rgba(122, 83, 64, 0.16);
+  background: var(--cream);
+  font-weight: 800;
 }
-.book-cover span { text-transform: uppercase; letter-spacing: 0.18em; font-size: 0.85rem; }
-.book-cover strong { font-family: "Cormorant Garamond", Georgia, serif; text-transform: uppercase; font-size: 1.8rem; line-height: 0.95; letter-spacing: 0.07em; }
-.book-cover em { font-family: Georgia, serif; font-style: normal; font-size: 0.9rem; color: #9e6a55; }
-
-.area-guide,
-.house-section { padding: 58px 0 38px; }
-.centered { text-align: center; margin-inline: auto; max-width: 760px; }
-.area-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 18px;
-  margin-top: 30px;
-}
-.area-grid article {
-  padding: 24px;
-  border-radius: var(--radius);
-  background: rgba(255,255,255,0.58);
-  border: 1px solid rgba(216, 115, 92, 0.16);
-  box-shadow: 0 12px 34px rgba(97, 57, 41, 0.06);
-}
-.area-grid h3 { margin-bottom: 10px; font-family: "Cormorant Garamond", Georgia, serif; font-size: 1.35rem; }
-
-.house-photo-grid {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr 0.8fr;
-  grid-auto-rows: 220px;
-  gap: 18px;
-  margin-top: 34px;
-}
-.house-photo-card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  min-height: 220px;
-  overflow: hidden;
-  padding: 24px;
-  border-radius: var(--radius);
-  background:
-    linear-gradient(180deg, transparent, rgba(76, 49, 39, 0.64)),
-    linear-gradient(135deg, rgba(216, 115, 92, 0.22), rgba(122, 168, 166, 0.25)),
-    #ead6c5;
-  border: 1px dashed rgba(216, 115, 92, 0.36);
-  color: var(--white);
-}
-.house-photo-card.large { grid-row: span 2; }
-.house-photo-card span { font-weight: 900; letter-spacing: 0.12em; text-transform: uppercase; font-size: 0.78rem; }
-.house-photo-card p { margin: 8px 0 0; color: rgba(255,255,255,0.84); }
 
 .booking {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 32px;
-  margin-top: 46px;
+  margin-top: 14px;
   padding: clamp(34px, 5vw, 56px);
   border-radius: var(--radius) var(--radius) 0 0;
   background: linear-gradient(135deg, var(--peach), var(--peach-dark));
@@ -328,10 +320,16 @@ h3 { color: var(--ink); font-size: 1.05rem; }
   color: var(--white);
   border-top: 1px solid rgba(255,255,255,0.22);
 }
-.footer img { width: 190px; filter: brightness(0) invert(1); }
+.footer img {
+  width: 190px;
+  padding: 12px;
+  border-radius: 18px;
+  background: rgba(255, 250, 244, 0.94);
+}
 .footer h3 { color: var(--white); margin-bottom: 16px; font-size: 0.96rem; }
 .footer a,
 .footer p { display: block; margin: 0 0 10px; color: rgba(255,255,255,0.88); line-height: 1.5; }
+.footer-brand p { margin-top: 12px; }
 .footer-button {
   display: inline-flex !important;
   width: fit-content;
@@ -348,11 +346,10 @@ h3 { color: var(--ink); font-size: 1.05rem; }
   .site-header { align-items: flex-start; flex-direction: column; min-height: auto; }
   .nav { width: 100%; overflow-x: auto; padding-bottom: 4px; }
   .hero,
-  .guidebook-section { grid-template-columns: 1fr; }
+  .resource-links { grid-template-columns: 1fr; }
   .hero-panel { min-height: auto; }
   .hero-photo-wrap { min-height: 360px; height: 420px; }
-  .amenity-grid,
-  .area-grid { grid-template-columns: repeat(2, 1fr); }
+  .amenity-grid { grid-template-columns: repeat(2, 1fr); }
   .amenity-grid article:nth-child(2) { border-right: 0; }
   .amenity-grid article { border-bottom: 1px solid var(--line); padding-block: 26px; }
   .booking { display: grid; }
@@ -370,10 +367,9 @@ h3 { color: var(--ink); font-size: 1.05rem; }
   .hero-actions { flex-direction: column; align-items: stretch; }
   .button { width: 100%; }
   .amenity-grid,
-  .area-grid,
   .house-photo-grid,
   .footer { grid-template-columns: 1fr; }
   .amenity-grid article { border-right: 0; }
   .house-photo-card.large { grid-row: auto; }
-  .book-cover { width: min(220px, 82%); }
+  .resource-card { min-height: 280px; }
 }
