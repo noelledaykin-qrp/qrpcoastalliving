@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>QRP Coastal Living | The Flamingo House</title>
-  <meta name="description" content="The Flamingo House by QRP Coastal Living is a warm Charleston-area Airbnb with four bedrooms, comfortable living spaces, outdoor hangout space, and a guest guidebook." />
+  <meta name="description" content="The Flamingo House by QRP Coastal Living is a boutique Charleston-area stay with an easy digital concierge for check-in, local recommendations, special stay add-ons, and check-out details." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700;800&family=Style+Script&display=swap" rel="stylesheet">
@@ -15,128 +15,115 @@
     <a class="brand" href="#top" aria-label="QRP Coastal Living home">
       <img src="assets/qrp-logo.svg" alt="QRP Coastal Living logo" />
     </a>
+
     <nav class="nav" aria-label="Main navigation">
       <a class="active" href="#top">Home</a>
-      <a href="#house">The House</a>
-      <a href="#amenities">Amenities</a>
-      <a href="#guidebook">Guidebook</a>
-      <a href="#area-guide">Area Guide</a>
-      <a href="#book" class="nav-button">Book Your Stay</a>
-      <a href="mailto:hello@theflamingohouse.com" class="contact-button">Contact Us</a>
+      <a href="#your-stay">Your Stay</a>
+      <a href="#explore">Explore</a>
+      <a href="#food-drinks">Food &amp; Drinks</a>
+      <a href="#experiences">Experiences</a>
+      <a href="#help">Need Help?</a>
+      <a href="#book" class="nav-button">Book Direct</a>
     </nav>
   </header>
 
   <main id="top">
-    <section class="hero section-shell">
-      <div class="hero-panel">
-        <p class="hero-kicker">The</p>
-        <h1>Flamingo<br />House</h1>
-        <p class="hero-text">Your home base for memory-making, laughter-filled nights, and easy Lowcountry living.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#book">Book Your Stay</a>
-          <a class="button outline" href="mailto:hello@theflamingohouse.com">Contact Us</a>
-        </div>
-      </div>
-      <div class="hero-photo-wrap">
-        <img class="hero-photo" src="assets/hero-house.webp" alt="Front exterior of The Flamingo House" />
+    <section class="hero">
+      <div class="hero-image" role="img" aria-label="Front exterior of The Flamingo House"></div>
+      <div class="hero-copy">
+        <p class="hero-script">Welcome to</p>
+        <h1>The Flamingo House</h1>
+        <p>We’re so happy you’re here. Your complete guide to a relaxing, thoughtful, and easy Lowcountry stay.</p>
       </div>
     </section>
 
-    <section id="house" class="house-section section-shell">
+    <section class="concierge section-shell" aria-labelledby="concierge-title">
       <div class="section-heading centered">
-        <p class="eyebrow">The House</p>
-        <h2>A place to stay. A place to make memories.</h2>
-        <p>Take a look inside The Flamingo House. This section will grow as the home is styled, photographed, and guest-ready.</p>
+        <h2 id="concierge-title">Everything you need for the perfect stay.</h2>
       </div>
-      <div class="house-photo-grid">
-        <div class="house-photo-card large"><span>Exterior</span><p>Front of The Flamingo House.</p></div>
-        <div class="house-photo-card"><span>Living Room</span><p>Add photo here.</p></div>
-        <div class="house-photo-card"><span>Kitchen</span><p>Add photo here.</p></div>
-        <div class="house-photo-card"><span>Backyard</span><p>Add photo here.</p></div>
-      </div>
-    </section>
 
-    <section id="amenities" class="intro section-shell">
-      <p class="eyebrow">Welcome In</p>
-      <h2>Gather. Relax. Enjoy.</h2>
-      <p>Whether you’re here for a family getaway, friends weekend, business trip, or a little bit of everything — we’ve got you.</p>
+      <div class="concierge-grid">
+        <a class="concierge-card" href="guidebook.html#check-in" id="check-in">
+          <span class="card-icon">⌂</span>
+          <h3>Check-In &amp;<br />House Info</h3>
+        </a>
 
-      <div class="amenity-grid">
-        <article>
-          <div class="amenity-icon">4</div>
-          <h3>4 Bedrooms</h3>
-          <p>Plenty of space for everyone to sleep and relax.</p>
-        </article>
-        <article>
-          <div class="amenity-icon">☁</div>
-          <h3>Comfortable Living</h3>
-          <p>Open living spaces made for connection.</p>
-        </article>
-        <article>
-          <div class="amenity-icon">⌂</div>
-          <h3>Outdoor Hangout</h3>
-          <p>Fire pit, seating, and room to unwind.</p>
-        </article>
-        <article>
-          <div class="amenity-icon">＋</div>
-          <h3>Fully Stocked</h3>
-          <p>Cook, dine, and make yourself at home.</p>
-        </article>
+        <a class="concierge-card" href="#experiences" id="special-stay">
+          <span class="card-icon">✦</span>
+          <h3>Make Your<br />Stay Special</h3>
+        </a>
+
+        <a class="concierge-card" href="guidebook.html#local" id="explore">
+          <span class="card-icon">☀</span>
+          <h3>Explore<br />the Area</h3>
+        </a>
+
+        <a class="concierge-card" href="guidebook.html#food-drinks" id="food-drinks">
+          <span class="card-icon">☕</span>
+          <h3>Food &amp;<br />Drinks</h3>
+        </a>
+
+        <a class="concierge-card" href="mailto:hello@theflamingohouse.com" id="help">
+          <span class="card-icon">?</span>
+          <h3>Need<br />Help?</h3>
+        </a>
+
+        <a class="concierge-card" href="guidebook.html#check-out" id="check-out">
+          <span class="card-icon">✓</span>
+          <h3>Check<br />Out</h3>
+        </a>
       </div>
     </section>
 
-    <section class="resource-links section-shell" aria-label="Guest resources">
-      <a id="guidebook" class="resource-card" href="guidebook.html">
-        <p class="eyebrow">Guest Guidebook</p>
-        <h2>Your stay, made easy.</h2>
-        <p>Arrival basics, house tips, check-out expectations, and everything guests should know before settling in.</p>
-        <span>Open the Guidebook</span>
-      </a>
+    <section id="experiences" class="experiences section-shell" aria-labelledby="experiences-title">
+      <div class="section-heading centered">
+        <p class="script-heading">Make Your Stay Special</p>
+        <h2 id="experiences-title">Add a little extra magic before you arrive.</h2>
+        <p>Choose one of our simple stay enhancements and we’ll help make your visit feel more personal, thoughtful, and memorable.</p>
+      </div>
 
-      <a id="area-guide" class="resource-card" href="guidebook.html#local">
-        <p class="eyebrow">Area Guide</p>
-        <h2>Explore the Lowcountry.</h2>
-        <p>Restaurants, coffee, beaches, golf, shopping, and Charleston-area ideas in one easy place.</p>
-        <span>Open the Area Guide</span>
-      </a>
+      <div class="experience-grid">
+        <article class="experience-card">
+          <div class="experience-photo romance"></div>
+          <div class="experience-content">
+            <h3>Romance Package</h3>
+            <p>Champagne, charcuterie, flowers, and a few sweet touches for two.</p>
+            <a href="mailto:hello@theflamingohouse.com?subject=Romance%20Package%20Request">Request This</a>
+          </div>
+        </article>
+
+        <article class="experience-card">
+          <div class="experience-photo birthday"></div>
+          <div class="experience-content">
+            <h3>Birthday Celebration</h3>
+            <p>Balloons, treats, and a simple setup to make someone feel celebrated.</p>
+            <a href="mailto:hello@theflamingohouse.com?subject=Birthday%20Celebration%20Request">Request This</a>
+          </div>
+        </article>
+
+        <article class="experience-card">
+          <div class="experience-photo beach"></div>
+          <div class="experience-content">
+            <h3>Beach Day Bundle</h3>
+            <p>Towels, sunscreen, cooler basics, and beach-day extras ready to go.</p>
+            <a href="mailto:hello@theflamingohouse.com?subject=Beach%20Day%20Bundle%20Request">Request This</a>
+          </div>
+        </article>
+
+        <article class="experience-card">
+          <div class="experience-photo coffee"></div>
+          <div class="experience-content">
+            <h3>Coffee Lover Kit</h3>
+            <p>Local coffee, mugs, and cozy morning treats to start your stay right.</p>
+            <a href="mailto:hello@theflamingohouse.com?subject=Coffee%20Lover%20Kit%20Request">Request This</a>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <section id="book" class="booking section-shell">
-      <div>
-        <p class="eyebrow light-text">Book Your Stay</p>
-        <h2>Ready to plan your getaway?</h2>
-        <p>Add the live Airbnb URL when the listing is ready. Until then, this button stays honest instead of pretending there is a booking link.</p>
-      </div>
-      <div class="booking-actions">
-        <a class="button cream" href="#">Check Availability</a>
-        <a class="button translucent" href="mailto:hello@theflamingohouse.com">Contact Us</a>
-      </div>
+    <section id="book" class="pause-note section-shell">
+      <p>More guest concierge sections coming next: local favorites, maps, check-out details, and guest support.</p>
     </section>
   </main>
-
-  <footer class="footer">
-    <div class="footer-brand">
-      <img src="assets/qrp-logo.svg" alt="QRP Coastal Living logo" />
-      <p>Coastal living. Elevated stays.</p>
-    </div>
-    <div>
-      <h3>Quick Links</h3>
-      <a href="#house">The House</a>
-      <a href="#amenities">Amenities</a>
-      <a href="#guidebook">Guidebook</a>
-      <a href="#area-guide">Area Guide</a>
-    </div>
-    <div>
-      <h3>Connect</h3>
-      <p>hello@theflamingohouse.com</p>
-      <p>Ladson, South Carolina</p>
-    </div>
-    <div>
-      <h3>Book Your Stay</h3>
-      <p>Ready to plan your getaway?</p>
-      <a class="footer-button" href="#book">Check Availability</a>
-      <a class="footer-link-button" href="mailto:hello@theflamingohouse.com">Contact Us</a>
-    </div>
-  </footer>
 </body>
 </html>
