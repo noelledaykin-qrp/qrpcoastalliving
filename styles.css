@@ -269,26 +269,32 @@ h3 {
   gap: 28px;
   margin-block: 30px 0;
   padding: clamp(28px, 4vw, 44px);
-  color: var(--white);
-  background: var(--coral);
+  color: var(--ink);
+  background: rgba(255, 255, 255, 0.54);
+  border: 1px solid var(--line);
+  border-bottom: 0;
   border-radius: 24px 24px 0 0;
+  box-shadow: 0 16px 42px rgba(90, 74, 66, 0.07);
 }
-.booking-strip h2,.booking-strip .eyebrow { color: var(--white); }
-.booking-strip p { max-width: 650px; color: rgba(255,255,255,.86); margin-bottom: 0; }
-.booking-strip .button.sage { background: var(--white); }
+.booking-strip h2 { color: var(--coral); }
+.booking-strip .eyebrow { color: var(--sage-dark); }
+.booking-strip p { max-width: 650px; color: var(--muted); margin-bottom: 0; }
+.booking-strip .button.sage { background: var(--sage-light); }
 
 .footer {
   display: grid;
   grid-template-columns: 1.3fr 0.8fr 1fr;
   gap: 28px;
   padding: 38px clamp(22px, 5vw, 70px);
-  color: var(--white);
-  background: var(--coral-dark);
+  color: var(--ink);
+  background: var(--cream);
+  border-top: 1px solid var(--line);
 }
-.footer img { width: 170px; padding: 10px; background: rgba(255,248,240,.95); border-radius: 18px; }
-.footer h3 { color: var(--white); margin-bottom: 12px; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.08em; }
-.footer a,.footer p { display: block; color: rgba(255,255,255,.86); line-height: 1.55; margin: 0 0 8px; }
-.footer strong { color: var(--white); }
+.footer img { width: 170px; padding: 10px; background: rgba(255,255,255,.72); border: 1px solid var(--line); border-radius: 18px; }
+.footer h3 { color: var(--coral); margin-bottom: 12px; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.08em; }
+.footer a,.footer p { display: block; color: var(--muted); line-height: 1.55; margin: 0 0 8px; }
+.footer a:hover,.footer a:focus { color: var(--coral-dark); }
+.footer strong { color: var(--coral); }
 
 @media (max-width: 1120px) {
   .site-header { align-items: flex-start; flex-direction: column; min-height: auto; }
