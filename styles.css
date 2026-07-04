@@ -1,19 +1,19 @@
 :root {
-  --cream: #fff8f2;
+  --cream: #fff8f0;
   --warm-cream: #f7eadb;
   --white: #ffffff;
-  --navy: #12334b;
-  --navy-soft: #28506a;
-  --coral: #e47661;
-  --coral-dark: #c85d4b;
-  --coral-soft: #f5c7b9;
-  --sage: #8fae9b;
-  --sage-dark: #5f7f6b;
-  --sage-light: #dce9df;
-  --sand: #efe1d0;
-  --muted: #6d6a65;
-  --line: rgba(228, 118, 97, 0.18);
-  --shadow: 0 18px 45px rgba(18, 51, 75, 0.11);
+  --ink: #5a4a42;
+  --ink-soft: #7a665d;
+  --coral: #c96f5d;
+  --coral-dark: #a95849;
+  --coral-soft: #f1c6b9;
+  --sage: #8fa99a;
+  --sage-dark: #6f897a;
+  --sage-light: #e4ede6;
+  --sand: #f3e2d1;
+  --muted: #75685f;
+  --line: rgba(201, 111, 93, 0.18);
+  --shadow: 0 18px 45px rgba(90, 74, 66, 0.10);
   --radius: 18px;
 }
 
@@ -21,10 +21,8 @@
 html { scroll-behavior: smooth; }
 body {
   margin: 0;
-  color: var(--navy);
-  background:
-    radial-gradient(circle at top right, rgba(220, 233, 223, 0.72), transparent 34%),
-    linear-gradient(180deg, #fffaf4 0%, var(--cream) 48%, var(--warm-cream) 100%);
+  color: var(--ink);
+  background: var(--cream);
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 img { display: block; max-width: 100%; }
@@ -40,7 +38,7 @@ a { color: inherit; text-decoration: none; }
   gap: 30px;
   min-height: 94px;
   padding: 14px clamp(22px, 5vw, 70px);
-  background: rgba(255, 248, 242, 0.96);
+  background: rgba(255, 248, 240, 0.96);
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(16px);
 }
@@ -50,7 +48,7 @@ a { color: inherit; text-decoration: none; }
   align-items: center;
   gap: clamp(14px, 2vw, 27px);
   overflow-x: auto;
-  color: var(--navy);
+  color: var(--ink);
   font-size: 0.8rem;
   font-weight: 800;
   letter-spacing: 0.04em;
@@ -72,15 +70,16 @@ a { color: inherit; text-decoration: none; }
 .nav a:hover::after,
 .nav a:focus::after,
 .nav a.active::after { transform: scaleX(1); }
+.nav a.active { color: var(--coral-dark); }
 .nav-button {
   display: inline-flex;
   align-items: center;
   min-height: 46px;
   padding: 0 22px !important;
   color: var(--white) !important;
-  background: linear-gradient(135deg, var(--coral), var(--coral-dark));
+  background: var(--coral);
   border-radius: 999px;
-  box-shadow: 0 14px 26px rgba(200, 93, 75, 0.18);
+  box-shadow: 0 14px 26px rgba(201, 111, 93, 0.18);
 }
 
 .section-shell { width: min(1180px, calc(100% - 48px)); margin-inline: auto; }
@@ -91,12 +90,12 @@ a { color: inherit; text-decoration: none; }
   grid-template-columns: 1fr 1fr;
   align-items: stretch;
   overflow: hidden;
-  background: #e8ddce;
+  background: var(--cream);
 }
 .hero-image {
   min-height: 430px;
   background:
-    linear-gradient(90deg, rgba(255, 248, 242, 0.02), rgba(255, 248, 242, 0.44)),
+    linear-gradient(90deg, rgba(255, 248, 240, 0.02), rgba(255, 248, 240, 0.44)),
     url("assets/hero-house.webp") center/cover no-repeat;
 }
 .hero-copy {
@@ -107,17 +106,14 @@ a { color: inherit; text-decoration: none; }
   justify-content: center;
   padding: clamp(36px, 6vw, 72px);
   text-align: center;
-  background:
-    linear-gradient(90deg, rgba(255, 248, 242, 0.72), rgba(255, 248, 242, 0.96)),
-    radial-gradient(circle at top, rgba(228, 118, 97, 0.16), transparent 42%),
-    radial-gradient(circle at bottom right, rgba(143, 174, 155, 0.24), transparent 38%);
+  background: var(--cream);
 }
 .property-label {
   margin: 0 0 18px;
   padding: 8px 14px;
   color: var(--sage-dark);
-  background: rgba(220, 233, 223, 0.78);
-  border: 1px solid rgba(95, 127, 107, 0.18);
+  background: var(--sage-light);
+  border: 1px solid rgba(111, 137, 122, 0.18);
   border-radius: 999px;
   font-size: 0.72rem;
   font-weight: 800;
@@ -136,15 +132,15 @@ h1,h2,h3,p { margin-top: 0; }
 h1,h2 { font-family: "Cormorant Garamond", Georgia, serif; }
 h1 {
   margin-bottom: 20px;
-  color: var(--navy);
+  color: var(--coral);
   font-size: clamp(3.8rem, 7vw, 7rem);
   line-height: 0.86;
   letter-spacing: -0.04em;
 }
-h2 { color: var(--navy); font-size: clamp(2rem, 3.8vw, 3.1rem); line-height: 1.04; }
+h2 { color: var(--ink); font-size: clamp(2rem, 3.8vw, 3.1rem); line-height: 1.04; }
 h3 {
   margin-bottom: 10px;
-  color: var(--navy);
+  color: var(--ink);
   font-size: 1rem;
   line-height: 1.25;
   letter-spacing: 0.03em;
@@ -174,8 +170,8 @@ h3 {
   transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
 .button:hover,.button:focus { transform: translateY(-2px); }
-.button.coral { color: var(--white); background: linear-gradient(135deg, var(--coral), var(--coral-dark)); box-shadow: 0 12px 24px rgba(200, 93, 75, 0.18); }
-.button.sage { color: var(--navy); background: var(--sage-light); border: 1px solid rgba(95, 127, 107, 0.22); }
+.button.coral { color: var(--white); background: var(--coral); box-shadow: 0 12px 24px rgba(201, 111, 93, 0.18); }
+.button.sage { color: var(--ink); background: var(--sage-light); border: 1px solid rgba(111, 137, 122, 0.22); }
 .centered { max-width: 760px; margin-inline: auto; text-align: center; }
 .eyebrow { margin: 0 0 10px; color: var(--sage-dark); font-size: 0.76rem; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; }
 
@@ -183,10 +179,10 @@ h3 {
   margin-top: 28px;
   padding: 36px clamp(20px, 4vw, 48px);
   text-align: center;
-  background: rgba(255, 255, 255, 0.68);
+  background: rgba(255, 255, 255, 0.54);
   border: 1px solid var(--line);
   border-radius: 24px;
-  box-shadow: 0 14px 38px rgba(18, 51, 75, 0.07);
+  box-shadow: 0 14px 38px rgba(90, 74, 66, 0.06);
 }
 .property-intro h2 { max-width: 850px; margin-inline: auto; }
 .property-intro p:last-child { max-width: 760px; margin: 14px auto 0; }
@@ -203,15 +199,15 @@ h3 {
   gap: 15px;
   padding: 24px 14px;
   text-align: center;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.72);
   border: 1px solid var(--line);
   border-radius: 18px;
-  box-shadow: 0 12px 28px rgba(18, 51, 75, 0.07);
+  box-shadow: 0 12px 28px rgba(90, 74, 66, 0.06);
   transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
 }
 .concierge-card:hover,.concierge-card:focus {
-  border-color: rgba(228, 118, 97, 0.42);
-  box-shadow: 0 18px 36px rgba(18, 51, 75, 0.13);
+  border-color: rgba(201, 111, 93, 0.42);
+  box-shadow: 0 18px 36px rgba(90, 74, 66, 0.11);
   transform: translateY(-4px);
 }
 .card-icon {
@@ -220,8 +216,8 @@ h3 {
   height: 56px;
   place-items: center;
   color: var(--coral-dark);
-  background: rgba(220, 233, 223, 0.55);
-  border: 1px solid rgba(95, 127, 107, 0.14);
+  background: var(--sage-light);
+  border: 1px solid rgba(111, 137, 122, 0.14);
   border-radius: 18px;
   font-size: 2rem;
   line-height: 1;
@@ -231,22 +227,22 @@ h3 {
 .experiences {
   margin-top: 18px;
   padding: 28px clamp(20px, 3vw, 30px) 34px;
-  background: rgba(255, 255, 255, 0.74);
+  background: rgba(255, 255, 255, 0.54);
   border: 1px solid var(--line);
   border-radius: 24px;
-  box-shadow: 0 16px 42px rgba(18, 51, 75, 0.08);
+  box-shadow: 0 16px 42px rgba(90, 74, 66, 0.07);
 }
 .experiences .section-heading { margin-bottom: 24px; }
 .script-heading { margin-bottom: 2px; color: var(--coral); }
 .experiences .section-heading h2 { font-size: clamp(1.8rem, 3vw, 2.55rem); }
 .experiences .section-heading p:last-child { max-width: 680px; margin: 12px auto 0; }
 .experience-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
-.experience-card { overflow: hidden; background: var(--white); border: 1px solid var(--line); border-radius: 18px; box-shadow: 0 10px 26px rgba(18, 51, 75, 0.07); }
+.experience-card { overflow: hidden; background: var(--white); border: 1px solid var(--line); border-radius: 18px; box-shadow: 0 10px 26px rgba(90, 74, 66, 0.06); }
 .experience-photo { min-height: 170px; background: var(--sand); }
-.experience-photo.romance { background: linear-gradient(135deg, rgba(95, 127, 107, 0.16), rgba(228, 118, 97, 0.16)), radial-gradient(circle at 38% 42%, rgba(255,255,255,.88) 0 8%, transparent 9%), linear-gradient(135deg, #f7ded2, #eaa997); }
-.experience-photo.birthday { background: radial-gradient(circle at 50% 38%, rgba(255,255,255,.9) 0 13%, transparent 14%), radial-gradient(circle at 34% 35%, rgba(228,118,97,.34) 0 3%, transparent 4%), radial-gradient(circle at 68% 30%, rgba(143,174,155,.42) 0 3%, transparent 4%), linear-gradient(135deg, #f5e3d6, #f2c9bc); }
-.experience-photo.beach { background: linear-gradient(180deg, #98c7bf 0 42%, #f7e2bd 43% 100%); }
-.experience-photo.coffee { background: radial-gradient(circle at 42% 48%, rgba(255,255,255,.88) 0 14%, transparent 15%), radial-gradient(circle at 62% 48%, rgba(255,255,255,.88) 0 14%, transparent 15%), linear-gradient(135deg, #e7d1bd, #bfd1be); }
+.experience-photo.romance { background: linear-gradient(135deg, var(--sage-light), var(--coral-soft)); }
+.experience-photo.birthday { background: linear-gradient(135deg, var(--sand), var(--coral-soft)); }
+.experience-photo.beach { background: linear-gradient(180deg, var(--sage) 0 42%, var(--sand) 43% 100%); }
+.experience-photo.coffee { background: linear-gradient(135deg, var(--sand), var(--sage-light)); }
 .experience-content { padding: 20px; }
 .experience-content p { min-height: 74px; margin-bottom: 18px; font-size: 0.95rem; }
 .experience-content a {
@@ -256,7 +252,7 @@ h3 {
   min-height: 38px;
   padding: 0 18px;
   color: var(--coral-dark);
-  border: 1px solid rgba(228, 118, 97, 0.28);
+  border: 1px solid rgba(201, 111, 93, 0.28);
   border-radius: 999px;
   font-size: 0.78rem;
   font-weight: 800;
@@ -274,7 +270,7 @@ h3 {
   margin-block: 30px 0;
   padding: clamp(28px, 4vw, 44px);
   color: var(--white);
-  background: linear-gradient(135deg, var(--coral), var(--coral-dark));
+  background: var(--coral);
   border-radius: 24px 24px 0 0;
 }
 .booking-strip h2,.booking-strip .eyebrow { color: var(--white); }
@@ -287,9 +283,9 @@ h3 {
   gap: 28px;
   padding: 38px clamp(22px, 5vw, 70px);
   color: var(--white);
-  background: linear-gradient(135deg, var(--coral-dark), #a94f40);
+  background: var(--coral-dark);
 }
-.footer img { width: 170px; padding: 10px; background: rgba(255,248,242,.95); border-radius: 18px; }
+.footer img { width: 170px; padding: 10px; background: rgba(255,248,240,.95); border-radius: 18px; }
 .footer h3 { color: var(--white); margin-bottom: 12px; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.08em; }
 .footer a,.footer p { display: block; color: rgba(255,255,255,.86); line-height: 1.55; margin: 0 0 8px; }
 .footer strong { color: var(--white); }
