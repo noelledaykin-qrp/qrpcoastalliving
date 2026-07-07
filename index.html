@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600;700;800&family=Style+Script&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260704-1" />
+  <link rel="stylesheet" href="styles.css?v=20260706-2" />
 </head>
 <body>
   <header class="site-header">
@@ -28,12 +28,13 @@
   </header>
 
   <main id="top">
-    <section class="hero">
-      <div class="hero-image" role="img" aria-label="Front exterior of The Flamingo House"></div>
+    <section class="hero" aria-label="The Flamingo House welcome">
+      <div class="hero-image" role="img" aria-label="Exterior of The Flamingo House"></div>
       <div class="hero-copy">
-        <p class="hero-script">Welcome to</p>
-        <h1>The Flamingo House</h1>
-        <p class="property-subtitle">A Lowcountry stay made for easy mornings, relaxed evenings, and comfortable time together.</p>
+        <p class="hero-script">Welcome</p>
+        <h1>Welcome to<br />The Flamingo House</h1>
+        <div class="hero-line"></div>
+        <p class="property-subtitle">A Lowcountry stay made for easy mornings, relaxed evenings, and comfortable time together. We're so glad you're here.</p>
         <div class="hero-actions">
           <a class="button coral" href="#book">Book Your Stay</a>
           <a class="button sage" href="mailto:hello@theflamingohouse.com">Contact Us</a>
@@ -41,9 +42,10 @@
       </div>
     </section>
 
-    <section class="property-intro section-shell">
+    <section id="your-stay" class="property-intro section-shell">
+      <div class="flamingo-mark" aria-hidden="true">Flamingo House</div>
       <h2>Comfortable, charming, and ready for your stay.</h2>
-      <p>Use this page as your guest hub for house details, local recommendations, stay enhancements, and support before or during your visit.</p>
+      <p>Whether you're here for a weekend getaway or a longer escape, this guest hub gives you the details, local favorites, and thoughtful touches you need for an easy stay.</p>
     </section>
 
     <section class="concierge section-shell" aria-labelledby="concierge-title">
@@ -53,93 +55,73 @@
       </div>
 
       <div class="concierge-grid">
-        <a class="concierge-card" href="guidebook.html#check-in" id="check-in">
-          <span class="card-icon">⌂</span>
-          <h3>Check-In &amp;<br />House Info</h3>
-        </a>
-
-        <a class="concierge-card" href="#experiences" id="special-stay">
-          <span class="card-icon">✦</span>
-          <h3>Make Your<br />Stay Special</h3>
+        <a class="concierge-card" href="guidebook.html#check-in">
+          <span class="card-icon">Home</span>
+          <h3>Your Stay</h3>
+          <p>Check-in info, house details, and everything you need to know.</p>
+          <span class="learn-more">Learn More</span>
         </a>
 
         <a class="concierge-card" href="guidebook.html#local" id="explore">
-          <span class="card-icon">☀</span>
-          <h3>Explore<br />the Area</h3>
+          <span class="card-icon">Palm</span>
+          <h3>Explore</h3>
+          <p>Local favorites, beaches, shops, and things to do.</p>
+          <span class="learn-more">Learn More</span>
         </a>
 
         <a class="concierge-card" href="guidebook.html#food-drinks" id="food-drinks">
-          <span class="card-icon">☕</span>
-          <h3>Food &amp;<br />Drinks</h3>
+          <span class="card-icon">Food</span>
+          <h3>Food &amp; Drinks</h3>
+          <p>Our go-to spots for coffee, brunch, lunch, and dinner.</p>
+          <span class="learn-more">Learn More</span>
+        </a>
+
+        <a class="concierge-card" href="#experiences">
+          <span class="card-icon">Bag</span>
+          <h3>Enhancements</h3>
+          <p>Add something special to make your stay even better.</p>
+          <span class="learn-more">Learn More</span>
         </a>
 
         <a class="concierge-card" href="mailto:hello@theflamingohouse.com" id="help">
           <span class="card-icon">?</span>
-          <h3>Need<br />Help?</h3>
+          <h3>Need Help?</h3>
+          <p>We're here for you. Find answers to common questions.</p>
+          <span class="learn-more">Learn More</span>
         </a>
 
-        <a class="concierge-card" href="guidebook.html#check-out" id="check-out">
-          <span class="card-icon">✓</span>
-          <h3>Check<br />Out</h3>
+        <a class="concierge-card" href="guidebook.html#check-out">
+          <span class="card-icon">Rules</span>
+          <h3>House Rules</h3>
+          <p>A few simple things to help everyone enjoy their stay.</p>
+          <span class="learn-more">Learn More</span>
         </a>
       </div>
     </section>
 
-    <section id="experiences" class="experiences section-shell" aria-labelledby="experiences-title">
-      <div class="section-heading centered">
-        <p class="script-heading">Make Your Stay Special</p>
-        <h2 id="experiences-title">Curated touches, Flamingo House style.</h2>
-        <p>Choose one of our simple stay enhancements and we’ll help make your visit feel more personal, thoughtful, and memorable.</p>
-      </div>
-
-      <div class="experience-grid">
-        <article class="experience-card">
-          <div class="experience-photo romance"></div>
-          <div class="experience-content">
-            <h3>Romance Package</h3>
-            <p>Champagne, charcuterie, flowers, and a few sweet touches for two.</p>
-            <a href="mailto:hello@theflamingohouse.com?subject=Romance%20Package%20Request">Request This</a>
-          </div>
-        </article>
-
-        <article class="experience-card">
-          <div class="experience-photo birthday"></div>
-          <div class="experience-content">
-            <h3>Birthday Celebration</h3>
-            <p>Balloons, treats, and a simple setup to make someone feel celebrated.</p>
-            <a href="mailto:hello@theflamingohouse.com?subject=Birthday%20Celebration%20Request">Request This</a>
-          </div>
-        </article>
-
-        <article class="experience-card">
-          <div class="experience-photo beach"></div>
-          <div class="experience-content">
-            <h3>Beach Day Bundle</h3>
-            <p>Towels, sunscreen, cooler basics, and beach-day extras ready to go.</p>
-            <a href="mailto:hello@theflamingohouse.com?subject=Beach%20Day%20Bundle%20Request">Request This</a>
-          </div>
-        </article>
-
-        <article class="experience-card">
-          <div class="experience-photo coffee"></div>
-          <div class="experience-content">
-            <h3>Coffee Lover Kit</h3>
-            <p>Local coffee, mugs, and cozy morning treats to start your stay right.</p>
-            <a href="mailto:hello@theflamingohouse.com?subject=Coffee%20Lover%20Kit%20Request">Request This</a>
-          </div>
-        </article>
+    <section id="experiences" class="enhancement-feature section-shell" aria-labelledby="enhancement-title">
+      <div class="feature-photo" role="img" aria-label="Outdoor coastal patio at The Flamingo House"></div>
+      <div class="feature-copy">
+        <p class="script-heading">Make it a little extra.</p>
+        <h2 id="enhancement-title">Curated touches, Flamingo House style.</h2>
+        <p>Enhance your stay with thoughtful touches and simple extras that can be waiting for you when you arrive.</p>
+        <a class="button coral" href="mailto:hello@theflamingohouse.com">View Enhancements</a>
       </div>
     </section>
 
     <section id="book" class="booking-strip section-shell">
-      <div>
-        <p class="eyebrow">The Flamingo House</p>
-        <h2>Ready to stay?</h2>
-        <p>Book direct when available, or contact us for questions about the property, guidebook, local area, or stay enhancements.</p>
+      <div class="booking-copy">
+        <span class="card-icon small">Book</span>
+        <div>
+          <h2>Book direct for the best experience.</h2>
+          <p>Special rates, flexible options, and direct communication with us every time.</p>
+        </div>
       </div>
-      <div class="booking-actions">
-        <a class="button coral" href="#">Book Direct</a>
-        <a class="button sage" href="mailto:hello@theflamingohouse.com">Contact Us</a>
+      <div class="booking-perks" aria-label="Booking benefits">
+        <span>Best Rate<br />Guaranteed</span>
+        <span>Flexible<br />Options</span>
+        <span>Direct<br />Communication</span>
+        <span>Local<br />Support</span>
       </div>
     </section>
   </main>
@@ -147,20 +129,21 @@
   <footer class="footer">
     <div class="footer-brand">
       <img src="assets/qrp-logo.svg" alt="QRP Coastal Living logo" />
-      <p><strong>The Flamingo House</strong></p>
     </div>
-    <div>
-      <h3>Property</h3>
-      <a href="#top">The Flamingo House</a>
-      <a href="#your-stay">Your Stay</a>
-      <a href="#experiences">Enhancements</a>
+    <div class="footer-center">
+      <h3>Curated stays. Coastal charm.</h3>
+      <p>Thank you for staying with us. We hope you love The Flamingo House as much as we do.</p>
     </div>
-    <div>
-      <h3>Guest Resources</h3>
-      <a href="guidebook.html">Guest Guidebook</a>
-      <a href="guidebook.html#local">Area Guide</a>
-      <a href="mailto:hello@theflamingohouse.com">Contact Us</a>
+    <div class="footer-social">
+      <h3>Connect With Us</h3>
+      <div class="social-row">
+        <a href="mailto:hello@theflamingohouse.com" aria-label="Email The Flamingo House">Email</a>
+        <a href="#top" aria-label="Instagram coming soon">Insta</a>
+        <a href="#book" aria-label="Book Direct">Book</a>
+      </div>
     </div>
   </footer>
+
+  <div class="copyright">(c) 2025 QRP Coastal Living. All rights reserved.</div>
 </body>
 </html>
